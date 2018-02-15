@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+@mixin fontStyler ($size,
+$color,
+$weight) {
+   font: {
+      family: 'Lato', sans-serif;
+      size: $size;
+      weight: $weight;
+   }
+   color: $color;
+}
+@mixin infoBlockImg {
+   display: block;
+    margin: 0 auto;
+}
+@mixin infoBlockTitle {
+    @include fontStyler (18px, #353738, 700);
+   text-transform: uppercase;
+   letter-spacing: 3.6px;
+   text-align: center;
+}
+@mixin infoBlockText($lineHeight) {
+    @include fontStyler (18px, #848789, 400);
+   line-height: $lineHeight;
+}

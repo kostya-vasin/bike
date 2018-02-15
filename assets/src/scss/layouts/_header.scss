@@ -1,0 +1,11 @@
+.header {
+   background-image: url(../img/png/hero_bike.png);
+   height: 800px;
+   position: relative;
+   @import "nav";
+   &__bg {
+      
+//      position: absolute;
+      z-index: -100;
+   }
+}

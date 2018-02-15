@@ -1,0 +1,51 @@
+.info {
+   display: flex;
+   max-height: 600px;
+   &--reverse {
+      flex-direction: row-reverse;
+
+   }
+   &__imgBig {
+      background-image: url(../img/png/bike_1.1.png);
+      background-repeat: no-repeat;
+      height: 600px;
+      width: 1067px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &--reverse {
+         background-image: url(../img/png/bike_2.2.png);
+         background-repeat: no-repeat;
+      }
+   }
+   &__wrapper {
+      margin-top: 70px;
+   }
+   &__icon {
+      @include infoBlockImg;
+   }
+   &__title {
+      @include infoBlockTitle;
+      padding-top: 30px;
+      padding-bottom: 25px;
+      margin: 0;
+   }
+   &__text {
+      max-width: 400px;
+      @include infoBlockText(21px);
+      margin: 0 auto;
+      font-size: 16px;
+
+   }
+   &__hr {
+      width: 50px;
+      border: 0;
+      border-top: 1px solid #353738;
+      margin-top: 40px;
+      margin-bottom: 56px;
+      &--reverse {
+         margin-bottom: 54px;
+      }
+   }
+   &__imgSmall {}
+}

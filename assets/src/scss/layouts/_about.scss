@@ -1,0 +1,18 @@
+.about {
+   margin: 0 auto;
+   margin-top: 115px;
+   max-width: 1080px;
+   height: 470px;
+   &__icon {
+     @include infoBlockImg;
+   }
+   &__title {
+      @include infoBlockTitle;
+      padding-top: 35px;
+      padding-bottom: 35px;
+   }
+   &__text {
+      @include infoBlockText(34px);
+      text-align: center;
+   }
+}
