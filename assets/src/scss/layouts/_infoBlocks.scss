@@ -8,6 +8,7 @@
    &__imgBig {
       background-image: url(../img/png/bike_1.1.png);
       background-repeat: no-repeat;
+      background-color: #282f35;
       height: 600px;
       width: 1067px;
       display: flex;
@@ -16,6 +17,7 @@
       &--reverse {
          background-image: url(../img/png/bike_2.2.png);
          background-repeat: no-repeat;
+         background-color: #282f35;
       }
    }
    &__wrapper {
