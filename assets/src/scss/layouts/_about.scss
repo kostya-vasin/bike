@@ -1,8 +1,14 @@
 .about {
    margin: 0 auto;
-   margin-top: 115px;
-   max-width: 1080px;
+   
+   
    height: 470px;
+   background-color: #f7f7f7;
+    &__container {
+          margin: 0 auto;
+       padding-top: 115px;
+    max-width: 1080px;
+   }
    &__icon {
      @include infoBlockImg;
    }

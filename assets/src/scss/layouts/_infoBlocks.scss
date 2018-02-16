@@ -3,10 +3,11 @@
    max-height: 600px;
    &--reverse {
       flex-direction: row-reverse;
-
    }
+  
    &__imgBig {
       background-image: url(../img/png/bike_1.1.png);
+      background-position: center; 
       background-repeat: no-repeat;
       background-color: #282f35;
       height: 600px;
@@ -21,7 +22,8 @@
       }
    }
    &__wrapper {
-      margin-top: 70px;
+      padding-top: 70px;
+      background-color: #ffffff;
    }
    &__icon {
       @include infoBlockImg;
@@ -49,5 +51,7 @@
          margin-bottom: 54px;
       }
    }
-   &__imgSmall {}
+   &__imgSmall {
+      background-color: #282f35;
+   }
 }
