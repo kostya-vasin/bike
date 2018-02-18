@@ -1,3 +1,47 @@
+
 .liveSocial {
-   
+   background-color: #f7f7f7;
+
+   &__container {
+   max-width: 1036px;
+   margin: 0 auto;
+      padding-top: 70px;
+   }
+   &__icon {
+display: block;
+      margin: 0 auto;
+   }
+   &__title {
+      @include infoBlockTitle;
+      letter-spacing: 1.8px;
+      text-transform: none;
+      margin-top: 37px;
+      margin-bottom: 27px;
+      &--lite {
+          @include fontStyler (18px, #848789, 400);
+         font-family: 'PT Sans', sans-serif; 
+      }
+      
+   }
+   &__titleSlash {
+         margin-left: 13px;
+         margin-right: 13px;
+      }
+   &__text {
+      @include fontStyler (24px, #848789, 300);
+      font-style: italic;
+      text-align: center;
+      padding-bottom: 105px;
+   }
+   &__dotsWrap {
+      color: #a9afb3;
+      font-size: 11px;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 68px;
+   }
+   &__dot {
+      padding-left: 4.5px;
+      padding-right: 4.5px;
+   }
 }

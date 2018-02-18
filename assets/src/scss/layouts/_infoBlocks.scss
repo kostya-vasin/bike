@@ -4,10 +4,10 @@
    &--reverse {
       flex-direction: row-reverse;
    }
-  
+
    &__imgBig {
       background-image: url(../img/png/bike_1.1.png);
-      background-position: center; 
+      background-position: center;
       background-repeat: no-repeat;
       background-color: #282f35;
       height: 600px;
@@ -24,6 +24,7 @@
    &__wrapper {
       padding-top: 70px;
       background-color: #ffffff;
+      max-width: 533px;
    }
    &__icon {
       @include infoBlockImg;
@@ -33,12 +34,21 @@
       padding-top: 30px;
       padding-bottom: 25px;
       margin: 0;
+      &--middle{
+         padding-top: 20px;
+      padding-bottom: 26px;
+      }
    }
    &__text {
       max-width: 400px;
       @include infoBlockText(21px);
       margin: 0 auto;
       font-size: 16px;
+      &--middle {
+         @include infoBlockText(21px);
+         font-size: 16px;
+         max-height: 170px;
+      }
 
    }
    &__hr {
@@ -50,8 +60,30 @@
       &--reverse {
          margin-bottom: 54px;
       }
+      &--middle {
+         margin-bottom: 54px;
+      }
    }
    &__imgSmall {
       background-color: #282f35;
+      max-width: 533px;
+   }
+   &__imgLeft {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-basis: auto;
+      background-image: url(../img/png/bike_3.1.png);
+      background-repeat: no-repeat;
+      background-color: #282f35;
+      width: 533px;
+      height: 600px;
+   }
+   &__imgRight{
+       background-color: #282f35;
+   }
+   &__imgLogo {
+      max-height: 67px;
    }
 }
