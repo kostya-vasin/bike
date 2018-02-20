@@ -5,6 +5,7 @@
    flex-direction: row;
    justify-content: center;
    align-items: center;
+   //btn
    &__btn {
       @include fontStyler (14px, #ffffff, 700);
       letter-spacing: 2.8px;

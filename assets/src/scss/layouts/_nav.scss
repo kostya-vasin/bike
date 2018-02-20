@@ -1,4 +1,5 @@
 .nav {
+   //top navigation menu
    padding-top: 35px;   
    display: flex;
    flex-direction: row;
@@ -14,6 +15,9 @@
       text-transform: uppercase;
       &:visited {
          color: #4d4959;
+      }
+       &:hover {
+         color: #64c29e;
       }
    }
 }

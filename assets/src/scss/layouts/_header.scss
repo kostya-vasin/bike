@@ -1,15 +1,11 @@
 .header {
+   //background
    background-image: url(../img/png/hero_bike.png);
    background-repeat: no-repeat;
-    background-position: center; 
+   background-position: center;
    background-color: #282f35;
-   
    height: 800px;
-   position: relative;
+   position: relative; 
+   //main menu import
    @import "nav";
-   &__bg {
-      
-//      position: absolute;
-      z-index: -100;
-   }
 }

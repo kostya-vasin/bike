@@ -1,14 +1,15 @@
-
+//twitter
 .liveSocial {
    background-color: #f7f7f7;
-
+   //centering content
    &__container {
-   max-width: 1036px;
-   margin: 0 auto;
+      max-width: 1036px;
+      margin: 0 auto;
       padding-top: 70px;
    }
+   //twitter icon
    &__icon {
-display: block;
+      display: block;
       margin: 0 auto;
    }
    &__title {
@@ -17,16 +18,15 @@ display: block;
       text-transform: none;
       margin-top: 37px;
       margin-bottom: 27px;
-      &--lite {
-          @include fontStyler (18px, #848789, 400);
-         font-family: 'PT Sans', sans-serif; 
+      &--lite { //time of post
+         @include fontStyler (18px, #848789, 400);
+         font-family: 'PT Sans', sans-serif;
       }
-      
    }
    &__titleSlash {
-         margin-left: 13px;
-         margin-right: 13px;
-      }
+      margin-left: 13px;
+      margin-right: 13px;
+   }
    &__text {
       @include fontStyler (24px, #848789, 300);
       font-style: italic;

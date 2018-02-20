@@ -4,15 +4,19 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   
+   //...Stay on the saddle!
    &__text {
       @include fontStyler (24px, #848789, 300);
       font-style: italic;
       margin: 40px 0 35px 0;
    }
+   //form
    &__form {
       display: flex;
       align-content: center;
    }
+   //email
    &__inputEmail {
       box-sizing: border-box;
       @include fontStyler (20px, #848789, 400);
@@ -35,6 +39,7 @@
          }
       }
    }
+   //btn
    &__btn {
       margin-left: 10px;
       border: 1px solid #64c29e;
