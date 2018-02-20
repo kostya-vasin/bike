@@ -1,8 +1,8 @@
 {
-  "name": "bower-file-project",
-  "description": "My first gulp project",
+  "name": "bike",
+  "description": "training my skills",
   "main": "gulpfile.js",
-  "author": "Nastya",
+  "author": "Kostya",
   "ignore": [
     "**/.*",
     "node_modules",

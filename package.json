@@ -1,12 +1,12 @@
 {
-  "name": "gulp-template",
+  "name": "bike",
   "version": "1.0.0",
-  "description": "Template with gulp",
+  "description": "training my skills",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Nastya K.",
+  "author": "Vasin K.",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.13",
