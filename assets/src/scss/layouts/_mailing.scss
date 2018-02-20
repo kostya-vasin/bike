@@ -1,0 +1,51 @@
+.mailing {
+   height: 470px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   &__text {
+      @include fontStyler (24px, #848789, 300);
+      font-style: italic;
+      margin: 40px 0 35px 0;
+   }
+   &__form {
+      display: flex;
+      align-content: center;
+   }
+   &__inputEmail {
+      box-sizing: border-box;
+      @include fontStyler (20px, #848789, 400);
+      border: 1px solid #d3d7d9;
+      min-width: 400px;
+      max-width: 400px;
+      min-height: 70px;
+      max-height: 70px !important;
+      padding: 0;
+      padding-left: 28px;
+      @include placeholder {
+         @include fontStyler (20px, #929292, 300);
+         font-style: italic;
+         opacity: 1;
+         transition: opacity 200ms;
+      }
+      &:focus {
+         @include placeholder {
+            opacity: 0;
+         }
+      }
+   }
+   &__btn {
+      margin-left: 10px;
+      border: 1px solid #64c29e;
+      background-color: #64c29e;
+      @include fontStyler (24px, #ffffff, 300);
+      text-transform: uppercase;
+      width: 127px;
+      height: 70px;
+      padding: 0;
+      &:hover {
+         background-color: (#64c29e - 10%);
+      }
+   }
+}

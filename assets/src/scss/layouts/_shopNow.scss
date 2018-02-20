@@ -1,0 +1,50 @@
+.shopNow {
+   display: flex;
+   flex-direction: row;
+   &__col {
+      display: flex;
+      flex-direction: column;
+      &--reverse {
+         flex-direction: column;
+      }
+   }
+   &__img {
+      max-width: 266px;
+   }
+   &__row {
+      display: flex;
+      flex-direction: row;
+   }
+   &__wrap {
+      background-image: url(../img/png/bike_4.4.1.png);
+      height: 267px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+
+   }
+   &__logo {
+      max-height: 30px;
+      max-width: 51px;
+   }
+   &__hover {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+         background-color: rgba(100, 194, 158, 0.85);
+      }
+   }
+   &__text {
+      @include fontStyler (14px, #ffffff, 700);
+         letter-spacing: 2.8px;
+      text-transform: uppercase;
+      text-decoration: none;
+      margin: 15px 0 0 0;
+   }
+}

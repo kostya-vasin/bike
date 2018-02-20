@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300i,400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700');
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
 @mixin fontStyler ($size,
@@ -24,4 +24,10 @@ $weight) {
 @mixin infoBlockText($lineHeight) {
     @include fontStyler (18px, #848789, 400);
    line-height: $lineHeight;
+}
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }  
 }
